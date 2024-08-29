@@ -1,0 +1,10 @@
+foskym-better-user-directory:
+  admin:
+    settings:
+      hide_search: 隐藏搜索
+      hide_filter_groups: 隐藏用户组筛选
+      podium_style: 排行榜风格
+      show_all_items_in_top_cards: 在顶部卡片中显示所有项目（或仅显示与排序相关的一个项目）
+      show_all_items_in_bottom_cards: 在底部卡片中显示所有项目（或仅显示与排序相关的一个项目）
+
+  forum:

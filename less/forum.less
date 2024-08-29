@@ -1,0 +1,232 @@
+.UserDirectoryList-Podium-users {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  padding: 25px;
+  margin-bottom: 0;
+  box-shadow: unset;
+  border-radius: .5rem;
+
+  @media (max-width: 479px) {
+    padding: 5px;
+  }
+
+  &>li {
+    width: 33.33333%;
+
+    &:first-child:last-child {
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    &>a {
+      text-decoration: none;
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
+
+    .PodiumUser-card {
+      .UserCard--podium {
+        .container {
+          padding: 8px !important;
+          position: relative;
+        }
+
+        .UserCard-profile {
+          padding-left: 0;
+          text-align: center;
+        }
+
+        .UserCard-identity {
+          font-weight: normal;
+          display: inline;
+          vertical-align: middle;
+        }
+
+        .UserCard-avatar {
+          display: block;
+          float: none;
+          margin: 0 auto 20px;
+          width: 64px + 8px;
+
+          .Avatar {
+            @avatar-size: 64px;
+            width: @avatar-size;
+            height: @avatar-size;
+            line-height: @avatar-size;
+          }
+        }
+
+        .UserCard-info {
+          margin-left: 5px;
+
+          &>li {
+            display: block;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+
+        // @media @phone {
+        //   .UserCard-avatar {
+        //     margin: 0 auto 15px auto;
+
+        //     .Avatar {
+        //       @avatar-size: 36px;
+        //       width: @avatar-size;
+        //       height: @avatar-size;
+        //       line-height: @avatar-size;
+        //       font-size: 20px;
+        //     }
+        //   }
+
+        //   .username {
+        //     font-size: 16px;
+        //   }
+
+        //   .UserCard-badges {
+        //     margin-left: 5px;
+        //     margin-right: 0;
+        //   }
+        // }
+
+        // @media (min-width: @screen-phone-max) {
+        //   .UserCard-avatar {
+        //     display: inline-block;
+        //   }
+
+        //   //Long usernames
+        //   a {
+        //     display: flex;
+        //     white-space: nowrap;
+        //   }
+
+        //   .username {
+        //     font-size: 18px;
+        //     text-overflow: ellipsis;
+        //     overflow: hidden;
+        //   }
+        // }
+
+        // @media @tablet-up {
+        //   .UserCard-badges {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 8px;
+
+        //     .Badge {
+        //       width: 18px;
+        //       height: 18px;
+        //       line-height: 16px;
+
+        //       &-icon {
+        //         font-size: 9px;
+        //       }
+        //     }
+        //   }
+
+        //   .UserCard-info {
+        //     margin: 0 0 0 40px;
+        //   }
+        // }
+      }
+    }
+
+    .PodiumUser-position {
+      padding-right: 0;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      position: relative;
+      font-size: 64px;
+      --control-bg-shaded: var(--control-bg);
+      background: var(--control-bg-shaded);
+      perspective: 400px;
+      perspective-origin: bottom;
+
+      @media (max-width: 479px) {
+        font-size: 36px
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -40px;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background: #e4e4e4;
+        opacity: 0.5;
+        z-index: -1;
+        transform: rotateX(45deg);
+        transform-origin: bottom
+      }
+
+      &.first {
+        height: 200px;
+        background: linear-gradient(to bottom, var(--control-bg-shaded), var(--control-bg-light));
+
+        &:before {
+          background: #e9e9e9
+        }
+
+        @media (max-width: 479px) {
+          height: 100px
+        }
+      }
+
+      &.second {
+        perspective-origin: bottom right;
+        height: 150px;
+
+        @media (max-width: 479px) {
+          height: 75px
+        }
+      }
+
+      &.third {
+        perspective-origin: bottom left;
+        height: 100px;
+
+        @media (max-width: 479px) {
+          height: 50px
+        }
+      }
+    }
+  }
+}
+
+.UserCard--order {
+  &-position {
+    position: relative;
+    float: left;
+    font-size: 48px;
+    margin-left: 16px;
+  }
+
+  .UserCard-avatar {
+    .Avatar {
+      --size: 64px;
+    }
+    @media @tablet-up {
+      margin-left: -40px;
+      margin-right: 24px;
+    }
+  }
+
+  .UserCard-identity {
+    .username {
+      @media @phone {
+        display: block;
+        margin: 0 auto 20px;
+      }
+    }
+  }
+}

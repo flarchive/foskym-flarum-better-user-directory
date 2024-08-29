@@ -1,0 +1,10 @@
+foskym-better-user-directory:
+  admin:
+    settings:
+      hide_search: Hide search
+      hide_filter_groups: Hide filter groups
+      podium_style: Podium style
+      show_all_items_in_top_cards: Show all items in top cards (or only one item related to the sorting)
+      show_all_items_in_bottom_cards: Show all items in bottom cards (or only one item related to the sorting)
+
+  forum:
