@@ -2,13 +2,15 @@
 
 > **Read-only archive of released versions of foskym/flarum-better-user-directory.** Not for installation: use [Packagist](https://packagist.org/packages/foskym/flarum-better-user-directory) or the [upstream repository](https://github.com/FoskyM/flarum-better-user-directory).
 
-**0** versions archived · Latest: [`v0.1.2`](https://github.com/flarchive/foskym-flarum-better-user-directory/tree/archive/v0.1.2) · License: `MIT` · Flarum: `^1.2.0`
+**3** versions archived · Latest: [`v0.1.2`](https://github.com/flarchive/foskym-flarum-better-user-directory/tree/archive/v0.1.2) · License: `MIT` · Flarum: `^1.2.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `v0.1.0` | 2024-08-28 | `^1.2.0` | [Browse](https://github.com/flarchive/foskym-flarum-better-user-directory/tree/archive/v0.1.0) |
+| `v0.1.1` | 2024-08-29 | `^1.2.0` | [Browse](https://github.com/flarchive/foskym-flarum-better-user-directory/tree/archive/v0.1.1) |
+| `v0.1.2` | 2024-08-29 | `^1.2.0` | [Browse](https://github.com/flarchive/foskym-flarum-better-user-directory/tree/archive/v0.1.2) |
 
 Catalog entry: [packages/foskym-flarum-better-user-directory.json](https://github.com/flarchive/archive-index/blob/main/packages/foskym-flarum-better-user-directory.json)
 
